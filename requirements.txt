@@ -1,0 +1,9 @@
+pandas
+numpy
+requests
+scikit-learn
+streamlit
+plotly
+matplotlib
+seaborn
+# Add forex-python if you decide to use it actively
