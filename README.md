@@ -1,89 +1,99 @@
-# International Education Cost Predictor 🎓
+<p align="center"><img src="https://raw.githubusercontent.com/dARSHANdR4/dARSHANdR4/main/assets/minecraft-emerald-divider.svg?v=4" width="100%" alt="Animated emerald pixel divider"></p>
 
-This project is a web application designed to help prospective students estimate the total cost of pursuing international education. Users can input various preferences such as country, degree level, program duration, and estimated living expenses, and the application provides a predicted total cost using a machine learning model. The costs can also be viewed in Indian Rupees (INR).
+<div align="center">
 
-## 🌟 Features
+# 🎓 International Education Cost Predictor
 
-* **Interactive Cost Prediction:** Predicts total education costs based on user inputs.
-* **Country and Degree Level Selection:** Choose from a list of available countries and degree levels.
-* **Customizable Inputs:** Sliders for program duration, living cost index, monthly rent, annual insurance, and visa fees.
-* **Currency Conversion:** Option to display costs in USD and Indian Rupees (INR).
-* **Cost Breakdown:** Visualizes the predicted cost breakdown into Tuition, Living Expenses, and Visa Fees using a pie chart.
-* **Comparative Analysis:** Displays average costs for the selected program in the chosen country and compares the prediction against this average.
-* **Interactive Charts:** Utilizes Plotly for dynamic bar charts (comparing average costs across countries) and pie charts.
-* **Data-Driven:** Trained on the "International Education Costs" dataset.
-* **User-Friendly Interface:** Built with Streamlit for an intuitive web experience.
-* **Model Persistence:** Loads a pre-trained model for quick predictions; retrains if the model is not found.
+**Estimate the cost of studying abroad — with a little emerald-powered UI.**
 
-## 📊 Dataset
+[![Python](https://img.shields.io/badge/Python-3.x-245b32?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-245b32?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Machine Learning](https://img.shields.io/badge/ML-Random_Forest-245b32?style=for-the-badge)](https://scikit-learn.org/)
 
-The model is trained on the [International Education Costs dataset](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/International_Education_Costs-LeyxyBrErfLztS2WwEbWNzwX0Qvt8g.csv). This dataset compiles detailed financial information for students pursuing higher education abroad, covering multiple countries, cities, and universities, and includes tuition, living expenses, and ancillary costs.
+[**Source repository ↗**](https://github.com/dARSHANdR4/International-Education-Cost-Predictor) · [**Developer profile ↗**](https://github.com/dARSHANdR4)
 
-The features used for prediction include:
-* `Country`
-* `Level` (Degree Level)
-* `Duration_Years`
-* `Living_Cost_Index`
-* `Rent_USD`
-* `Insurance_USD`
-* `Visa_Fee_USD`
+</div>
 
-The target variable is `Total_Cost_USD`.
+<p align="center"><img src="https://raw.githubusercontent.com/dARSHANdR4/dARSHANdR4/main/assets/minecraft-emerald-divider.svg?v=4" width="100%" alt="Animated emerald pixel divider"></p>
 
-## 🛠️ Technology Stack
+## 🌍 Project overview
 
-* **Programming Language:** Python
-* **Machine Learning:** Scikit-learn (`RandomForestRegressor`, `Pipeline`, `StandardScaler`, `OneHotEncoder`)
-* **Web Framework:** Streamlit
-* **Data Manipulation:** Pandas, NumPy
-* **Data Visualization:** Plotly, Matplotlib, Seaborn
-* **Data Fetching:** Requests
-* **Model Persistence:** Pickle
+A Streamlit application that estimates the total cost of pursuing higher education abroad. Choose a country and degree level, adjust study duration and living-cost assumptions, and review an estimated cost breakdown. Results can be displayed in USD or INR.
 
-## ⚙️ Setup and Installation
+> **Hosted demo:** A verified public deployment URL is not currently configured in this repository. Follow the local setup below to run the app.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YourUsername/YourRepositoryName.git](https://github.com/YourUsername/YourRepositoryName.git)
-    cd YourRepositoryName
-    ```
-    *(Replace `YourUsername/YourRepositoryName` with your actual GitHub username and repository name)*
+## ✨ Features
 
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    ```
-    Activate the environment:
-    * Windows:
-        ```bash
-        .\venv\Scripts\activate
-        ```
-    * macOS/Linux:
-        ```bash
-        source venv/bin/activate
-        ```
+- **Cost estimate:** Predicts total education cost from country, degree level, course duration, living-cost index, rent, insurance, and visa fee inputs.
+- **USD / INR display:** Shows estimates in US dollars and optionally Indian rupees.
+- **Cost breakdown:** Visualizes tuition, living expenses, and visa fees.
+- **Country comparison:** Compares estimates with data averages for selected countries and programs.
+- **Model persistence:** Loads local model/preprocessor files when present and otherwise attempts to download the dataset and train a model.
 
-3.  **Install dependencies:**
-    Ensure you have a `requirements.txt` file in your repository (generate one using `pip freeze > requirements.txt` if you haven't already).
-    ```bash
-    pip install -r requirements.txt
-    ```
-    Your `requirements.txt` should ideally include:
-    ```
-    pandas
-    numpy
-    requests
-    scikit-learn
-    streamlit
-    plotly
-    matplotlib
-    seaborn
-    # forex-python (if you decide to use it actively instead of the hardcoded rate)
-    ```
+## 🧠 Model and data
 
-## ▶️ How to Run
+The app uses a scikit-learn pipeline with a `RandomForestRegressor`, one-hot encoding for categorical inputs, and scaling for numeric features. During training, the dataset is split into training and holdout sets and R² / RMSE are displayed.
 
-Once the setup is complete, you can run the Streamlit application using the following command in your terminal (from the project's root directory):
+Dataset source: [International Education Costs CSV](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/International_Education_Costs-LeyxyBrErfLztS2WwEbWNzwX0Qvt8g.csv).
+
+The app derives an estimated total as:
+
+`tuition + (annual living cost × duration) + visa fee`
+
+These are model-based estimates from the supplied dataset, not official university quotes or guaranteed future costs.
+
+## 🧰 Tech stack
+
+Python · Streamlit · pandas · NumPy · scikit-learn · Plotly · Matplotlib · Seaborn · Requests
+
+## 🚀 Run locally
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/dARSHANdR4/International-Education-Cost-Predictor.git
+cd International-Education-Cost-Predictor
+```
+
+### 2. Create and activate a virtual environment
+
+**Windows (PowerShell):**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**macOS / Linux:**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install requirements and start Streamlit
+
+```bash
+python -m pip install -r requirements.txt
 streamlit run education_cost_predictor.py
+```
+
+On first run, the app may need internet access to fetch its public CSV dataset and train the model. It also creates local pickle files for the model and preprocessing/data objects.
+
+## ⚠️ Important limitations
+
+- The current source uses a **hard-coded USD→INR conversion rate of ₹85.42 per USD**. Treat INR output as illustrative until the rate is updated or replaced with a verified live source.
+- Model quality depends on the data and feature coverage; an in-app R² / RMSE score is not independent real-world validation.
+- Estimates should be checked against current tuition, rent, insurance, visa fees, scholarship details, and official university information before making financial decisions.
+
+## 🗺️ Next quests
+
+- Add a verified hosted deployment and health/availability note.
+- Replace the hard-coded currency rate with a reliable, date-stamped source.
+- Add automated smoke tests and a reproducible evaluation report.
+
+<p align="center"><img src="https://raw.githubusercontent.com/dARSHANdR4/dARSHANdR4/main/assets/minecraft-emerald-divider.svg?v=4" width="100%" alt="Animated emerald pixel divider"></p>
+
+<div align="center">
+
+**Built by [dARSHANdR4](https://github.com/dARSHANdR4) · Voxel Builder / Developer / Automation**
+
+</div>
