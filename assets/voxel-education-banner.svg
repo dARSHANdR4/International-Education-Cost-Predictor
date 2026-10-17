@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc" shape-rendering="crispEdges">
+<title id="title">Voxel Education Cost Predictor</title><desc id="desc">Minecraft-inspired voxel landscape with a graduation cap, books, emerald blocks, and a study-abroad cost estimate theme.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1720"/><stop offset="1" stop-color="#1d4538"/></linearGradient>
+<linearGradient id="emerald" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#baff8d"/><stop offset=".5" stop-color="#45da78"/><stop offset="1" stop-color="#176c43"/></linearGradient>
+</defs>
+<rect width="1200" height="300" fill="url(#sky)"/>
+<g fill="#c9f9d3"><rect x="92" y="45" width="4" height="4"/><rect x="180" y="82" width="3" height="3"/><rect x="1030" y="53" width="4" height="4"/><rect x="1104" y="92" width="3" height="3"/><rect x="875" y="38" width="3" height="3"/></g>
+<g opacity=".88"><path d="M0 196V150H95V123H145V165H208V140H262V181H318V146H375V195Z" fill="#234b3e"/><path d="M805 188V143H866V112H913V153H965V129H1020V164H1088V120H1140V151H1200V204Z" fill="#275741"/></g>
+<rect y="210" width="1200" height="35" fill="#408b46"/><rect y="210" width="1200" height="8" fill="#91e66a"/><rect y="245" width="1200" height="55" fill="#5c412e"/>
+<g fill="#82583b"><rect x="52" y="264" width="28" height="12"/><rect x="148" y="251" width="28" height="12"/><rect x="250" y="269" width="28" height="12"/><rect x="912" y="259" width="28" height="12"/><rect x="1048" y="271" width="28" height="12"/></g>
+<!-- voxel books -->
+<g transform="translate(76 142)"><rect x="0" y="34" width="118" height="22" fill="#9f3c4e"/><rect x="0" y="34" width="118" height="5" fill="#f5a3a9"/><rect x="9" y="39" width="7" height="17" fill="#f2ce73"/><rect x="17" y="8" width="109" height="27" fill="#2a6495"/><rect x="17" y="8" width="109" height="5" fill="#83c8f3"/><rect x="27" y="13" width="7" height="22" fill="#f5db8c"/><rect x="29" y="-12" width="81" height="20" fill="#e8eee0"/><rect x="29" y="-12" width="81" height="5" fill="#fff"/></g>
+<!-- graduation cap -->
+<g transform="translate(985 111)"><path d="M-4 25L74 -9L152 25L74 58Z" fill="#182b2f" stroke="#7ef19a" stroke-width="3"/><path d="M26 39V65Q74 91 122 65V39L74 59Z" fill="#304e43"/><path d="M151 25V62" stroke="#c3ff8d" stroke-width="4"/><rect x="145" y="60" width="12" height="12" fill="#91f66f"/></g>
+<!-- emerald cube -->
+<g transform="translate(875 180)"><path d="M0 18L34 0L68 18L34 38Z" fill="#baff91"/><path d="M0 18L34 38V76L0 56Z" fill="#37bd6b"/><path d="M34 38L68 18V56L34 76Z" fill="#187447"/><path d="M14 20L34 9L54 20L34 31Z" fill="#edffd4" opacity=".7"/></g>
+<rect x="258" y="67" width="686" height="138" rx="3" fill="#07140f" fill-opacity=".88" stroke="#76e990" stroke-width="2"/>
+<path d="M258 91V67H284M918 67H944V91M258 181V205H284M918 205H944V181" fill="none" stroke="#b6ff86" stroke-width="4"/>
+<g font-family="monospace" text-anchor="middle"><text x="601" y="114" font-size="18" fill="#7bed9a" letter-spacing="5">STUDY ABROAD / COST QUEST</text><text x="601" y="155" font-size="34" font-weight="900" fill="#f0ffe9">EDUCATION COST PREDICTOR</text><text x="601" y="182" font-size="13" fill="#c5dcc9" letter-spacing="2">ESTIMATE • COMPARE • PLAN</text></g>
+<rect width="1200" height="5" fill="#83f37e"/><rect y="295" width="1200" height="5" fill="#83f37e"/>
+</svg>
