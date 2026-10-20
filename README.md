@@ -98,3 +98,10 @@ On first run, the app may need internet access to fetch its public CSV dataset a
 **Built by [dARSHANdR4](https://github.com/dARSHANdR4) · Voxel Builder / Developer / Automation**
 
 </div>
+
+
+## Copyright and permissions
+
+Copyright © 2026 dARSHANdR4. All rights reserved.
+
+Unless otherwise stated, original project code and assets are reserved and no open-source licence is granted. Third-party materials remain subject to their respective licences. See [COPYRIGHT](./COPYRIGHT) for the full notice.
